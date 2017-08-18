@@ -6,11 +6,11 @@ public class MoveTo : MonoBehaviour
 {
 
     public Transform goal;
-    public NavMeshAgent agent;
+    public UnityEngine.AI.NavMeshAgent agent;
 
     void Start()
     {
-        agent = GetComponent<NavMeshAgent>();
+        agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
         
     }
 

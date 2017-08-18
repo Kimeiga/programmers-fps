@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 public class Brain : MonoBehaviour {
 
-    private NavMeshAgent agent;
+    private UnityEngine.AI.NavMeshAgent agent;
     private Camera cam;
     private MeshFilter camMeshFilter;
     private MeshCollider camMeshCollider;
@@ -25,7 +25,7 @@ public class Brain : MonoBehaviour {
     // Use this for initialization
     void Start () {
 
-        agent = gameObject.GetComponent<NavMeshAgent>();
+        agent = gameObject.GetComponent<UnityEngine.AI.NavMeshAgent>();
         line = gameObject.GetComponent<LineRenderer>();
         cam = gameObject.GetComponentInChildren<Camera>();
         camMeshFilter = cam.GetComponent<MeshFilter>();

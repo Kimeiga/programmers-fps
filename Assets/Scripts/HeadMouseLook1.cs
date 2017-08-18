@@ -40,7 +40,7 @@ public class HeadMouseLook1 : MonoBehaviour
     {
 
 
-        if (Input.GetButton("Middle Mouse Button"))
+        if (Input.GetButton("Look Around"))
         {
             canRotate = true;
 
